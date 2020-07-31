@@ -2,7 +2,7 @@ li {
     color: red;
 }
 /* Small devices (phones and pocket devices, 576 and up) */
-@media screen and (min-width:350px) {
+@media screen and (max-width:576px) {
     body {
         /*display: flex;*/
         color: red;
@@ -15,9 +15,10 @@ li {
         /*display: flex;
         justify-items: center;*/
     }
+    /*changed from 365px width*/
     img {
-        width: 339px;
-        height: 224px;
+        width: 60%;
+
     }
 }
 
@@ -39,8 +40,9 @@ li {
         justify-items: center;*/
     }
     img {
-        width: 890px;
-        height: 385px;
+        /**!changed from 1080px width*!*/
+        width: 80%;
+
     }
 }
 
