@@ -14,7 +14,8 @@ li {
         flex-direction: column;
         justify-content: space-between;
         margin: auto;
-        padding: 10px 20px 10px 10px;
+        /*NO idea why right padding needs to be twice the others*/
+        padding: 10px 10px 10px 10px;
         /*padding: 10px;*/
     }
     a {
@@ -70,21 +71,60 @@ li {
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:992px) {
     body {
-        /*display: flex;*/
-        color: green;
-        height: 1080px;
-        width: 1920px;
-        align-content: space-between;
+        color: red;
+        /*        TODO specifying height/width makes non responsive*/
+        /*        height: 1192px;
+                width: 365px;
+                align-content: space-between;*/
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: auto;
+        /*NO idea why right padding needs to be twice the others*/
+        padding: 10px 10px 10px 10px;
+        /*padding: 10px;*/
     }
+    a {
+        /*Makes the top text centered*/
+        padding: 10px;
+    }
+    .alert-info {
+        /*"skip to main content disappears in desktop view*/
+        /*Still need to make actual text disappear*/
+        display: none;
+    }
+    li>a {
+        display: flex;
+        justify-content: center;
+        border: 0;
+        margin: 0;
+    }
+    li {
+        /*display: flex;*/
+        width: 100%;
+        margin: 10px;
+        align-content: space-around;
+        justify-content: center;
+        background-color: lightgrey;
+    }
+    ul.nav-links {
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: 0;
+        padding: 0px;
 
+    }
     h1 {
-        /*display: flex;
-        justify-items: center;*/
+        display: flex;
+        justify-content: center;
     }
     img {
-        /**!changed from 1080px width*!*/
-        width: 80%;
-
+        /*I learned that less than 100% will shrink up and left*/
+        /*display: flex;*/
+        width: 100%;
+        border: 0px;
     }
 }
 
