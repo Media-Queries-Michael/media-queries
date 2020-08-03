@@ -1,11 +1,8 @@
-li {
-    color: red;
-}
+
 
 /* Small devices (phones and pocket devices, 576 and up) */
 @media screen and (max-width:576px) {
     body {
-        color: red;
 /*        TODO specifying height/width makes non responsive*/
 /*        height: 1192px;
         width: 365px;
@@ -71,7 +68,6 @@ li {
 /* Large devices (desktops, 992px and up) */
 @media screen and (min-width:577px) {
     body {
-        color: red;
         /*        TODO specifying height/width makes non responsive*/
         /*        height: 1192px;
                 width: 365px;
@@ -81,8 +77,30 @@ li {
         padding: 10px;
 
     }
+
+/*    section {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: center;
+        a
+    }*/
+    section {
+    }
     section.main {
-        /*width: auto;*/
+        width: 45%;
+        float: left;
+    }
+    section.sub-section {
+        float: right;
+        width: 45%;
+
+        /*turned the rows into columns*/
+        align-self: flex-end;
+        justify-self: start;
+        align-items: flex-start;
+
+
     }
     a {
         /*Makes the top text centered*/
@@ -111,6 +129,11 @@ li {
         /*display: flex;*/
         width: 100%;
         border: 0px;
+    }
+    h1 {
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
     }
 }
 
