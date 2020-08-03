@@ -7,9 +7,7 @@
 /*        height: 1192px;
         width: 365px;
         align-content: space-between;*/
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
+
         margin: auto;
         /*NO idea why right padding needs to be twice the others*/
         padding: 10px 10px 10px 10px;
@@ -72,9 +70,10 @@
         /*        height: 1192px;
                 width: 365px;
                 align-content: space-between;*/
-        display: flex;
-        flex-direction: column;
-        padding: 10px;
+        /*display: flex;*/
+        /*flex-direction: column;*/
+        /*padding: 10px;*/
+        /*margin: auto;*/
 
     }
 
@@ -88,12 +87,13 @@
     section {
     }
     section.main {
-        width: 45%;
+        width: 40%;
         float: left;
     }
     section.sub-section {
         float: right;
-        width: 45%;
+        width: 40%;
+
 
         /*turned the rows into columns*/
         align-self: flex-end;
@@ -115,14 +115,21 @@
         display: flex;
         justify-content: space-between;
     }
-    nav {
-        display: flex;
-        align-self: flex-end;
-        position: absolute; top: auto;
+    /*h1, nav{*/
+    /*    display: flex;*/
+    /*   float: right ;*/
+    /*    width: 50%;*/
+nav{
+    float: right;
+
     }
-    ul.nav-links {
+h1{
+    float: left;
+}
+    .nav-links {
         list-style: none;
         display: flex;
+        align-items:center ;
     }
     img {
         /*I learned that less than 100% will shrink up and left*/
@@ -130,10 +137,14 @@
         width: 100%;
         border: 0px;
     }
-    h1 {
-        display: flex;
-        align-items: flex-start;
-        flex-direction: column;
+
+
+    }
+    footer{
+
+       display: flex;
+        justify-content: end;
+        margin-top: 15em;
     }
 }
 
